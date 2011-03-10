@@ -1,4 +1,6 @@
 Spot::Application.routes.draw do
+  resources :things
+
   resources :locations
 
   # The priority is based upon order of creation:

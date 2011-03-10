@@ -70,3 +70,17 @@ html, body{
   margin-left:30px;
   font-size:12px;
 }
+
+/*==== Show documents ==== */
+#file_container{
+  width:80px;
+  height:100px;
+  float:left;
+  margin:20px;
+  
+}
+#inner_file_box{
+  width:80px;
+  height:80px;
+  background-color:gray;
+}

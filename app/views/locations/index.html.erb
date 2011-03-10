@@ -1,29 +1,12 @@
-<h1>Listing locations</h1>
-
-<table>
-  <tr>
-    <th>Latitude</th>
-    <th>Longitude</th>
-    <th>Owner</th>
-    <th>Email</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @locations.each do |location| %>
-  <tr>
-    <td><%= location.latitude %></td>
-    <td><%= location.longitude %></td>
-    <td><%= location.owner %></td>
-    <td><%= location.email %></td>
-    <td><%= link_to 'Show', location %></td>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <% link_to ('Show') do %>
+    <div id="file_container">
+      <div id="inner_file_box">
+      </div>
+      <p><%= location.owner %></p>
+    </div>
+  <% end %>
 <% end %>
-</table>
 
-<br />
-
+<br /><br /><br /><br /><br />
 <%= link_to 'New Location', new_location_path %>

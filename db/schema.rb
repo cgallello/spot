@@ -10,13 +10,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110310014542) do
+ActiveRecord::Schema.define(:version => 20110310024628) do
+
+  create_table "files", :force => true do |t|
+    t.string "name"
+    t.string "content_type"
+    t.binary "data",         :limit => 10485760
+  end
 
   create_table "locations", :force => true do |t|
     t.decimal  "latitude"
     t.decimal  "longitude"
     t.string   "owner"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
+
+  create_table "things", :force => true do |t|
+    t.string   "name"
+    t.string   "filetype"
+    t.string   "thing_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
