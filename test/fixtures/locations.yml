@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  latitude: 9.99
+  longitude: 9.99
+  owner: MyString
+  email: MyString
+
+two:
+  latitude: 9.99
+  longitude: 9.99
+  owner: MyString
+  email: MyString

@@ -1,0 +1,72 @@
+html, body{
+  font-family:"verdana","arial", sans-serif;
+  background-color:white;
+  color:#7d7d7d;
+  width:100%;
+  height:100%;
+  padding:0px;
+  margin:0px;
+}
+
+/*==== Header =====*/
+
+#header_container{
+  margin:30px auto 7px 30px;
+  width:1000px;
+  height:60px;
+}
+
+#logo_container{
+  float:left;
+}
+
+#nav_container{
+  float:right;
+  margin-top:15px;
+}
+
+/*==== Body =====*/
+
+#body_container{
+  width:100%;
+  height:auto;
+}
+
+#top_gradient{
+  height:7px;
+  width:100%;
+  background: #FFFFFF; /* old browsers */
+  background: -moz-linear-gradient(top, #FFFFFF 0%, #7A7A7A 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#7A7A7A)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#7A7A7A',GradientType=0 ); /* ie */
+}
+
+#bottom_gradient{
+  height:7px;
+  width:100%;
+  background: #7A7A7A; /* old browsers */
+  background: -moz-linear-gradient(top, #7A7A7A 0%, #FFFFFF 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7A7A7A), color-stop(100%,#FFFFFF)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7A7A7A', endColorstr='#FFFFFF',GradientType=0 ); /* ie */
+}
+
+#dropbox_container{
+  width:100%;
+  height:400px;
+  background-color:#f6f6f6;
+}
+
+#dropbox{
+  margin-left: 30px;
+  width:1000px;
+  text-align:left;
+  background-color:#f6f6f6;
+  padding:20px;
+}
+
+#location_box{
+  height:20px;
+  margin-top:10px;
+  margin-left:30px;
+  font-size:12px;
+}

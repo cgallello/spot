@@ -7,8 +7,27 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="header_container">
+      <div id="logo_container">
+        <%= image_tag("logo.png") %>
+      </div>
+      <div id="nav_container">
+        <p>Home About Blog Legal</p>
+      </div>
+    </div>
+    <div id="body_container">
+      <div id="top_gradient">
+      </div>
+      <div id="dropbox_container">
+      <div id="dropbox">
+        <%= yield %>
+      </div>
+      </div>
+      <div id="bottom_gradient">
+      </div>
+      <div id="location_box">
+      Current Location: 42.29,-71.26 : 0.00,0.00, Needham, MA
+      </div>
+    </div>
 </body>
 </html>
